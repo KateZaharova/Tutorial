@@ -88,49 +88,36 @@ body{
     background-color: tomato;
 }
 
-.btn::before{
+.btn::before, .btn::after{
     display: inline-block;
-    content:'';
-    /*background-color: blueviolet;*/
-    width:20px;
-    height:20px;
     align-items: center;
-    margin-right: 10px;
+    content: '';
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     transition: transform 250ms linear;
-    background-image: url('./images/sad.svg'); 
     background-size: contain;
 }
 
-.icon {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    stroke-width: 0;
-    stroke: currentColor;
-    fill: currentColor;
-}
+.btn::before{
+    position: absolute;
+    transform: translateY(0);
+    margin-left: 58px;
+    background-image: url('./images/sad.svg'); 
+    }
 
-.btn:hover::before{
+.btn:hover::before,
+.btn:focus::before{
 transform: translateY(-40px);
 }
 
 .btn::after{
-    position: absolute;
     transform: translateY(40px);
-    content: '';
-    display: inline-block;
-    /*background-color: #fff;*/
-    width:20px;
-    height:20px;
-    align-items: center;
-    margin-right: 10px;
-    border-radius: 50%;
-    transition: transform 250ms linear;
+    margin-left: 10px;
     background-image: url('./images/happy.svg');
-    background-size: contain;
 }
-      
-.btn:hover::after{
+    
+.btn:hover::after,
+.btn:focus::after{
     transform: translateY(0);
 }
