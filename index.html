@@ -17,9 +17,210 @@
     </div>
 </div>-->
 
+<!--<a href="">Click on the button</a>
+<button class="btn">Sign</button>-->
 
-<a href="">Click on the button</a>
-<button class="btn">Sign</button>
+<!--<form>
+    <fieldset>
+        <legend>Enter your contact details</legend>
+        <label>
+            Username
+            <input type="text" name="username" 
+            autofocus/>
+        </label>
+        <label>
+            Email
+            <input type="email" name="email"/>
+        </label>
+        <label>
+            Password
+            <input type="password" name="password" minlength="3" maxlength="10"/>
+        </label>
+        <label>
+            Phone number
+            <input type="tel" name="phone-number"/>
+        </label>
+        <button type="submit">Submit</button>
+    </fieldset>
+</form>
+
+<form >
+    <fieldset>
+    <legend>Choose a color</legend>
+    <label class="color-set">
+        White
+        <input type="radio" name="color" value="white" checked/></label>
+    <label class="color-set">
+        Red
+        <input type="radio" name="color" value="red"/></label>
+    <label class="color-set">
+        Green
+        <input type="radio" name="color" value="green"/></label>
+    </fieldset>
+
+    <fieldset>
+    <legend>Whate are your hobbies?</legend>
+    <label class="hobbies-set">
+        Tennis
+        <input type="checkbox" name="hobby" value="tennis" checked/></label>
+    <label class="hobbies-set">
+        Music
+        <input type="checkbox" name="hobby" value="music" checked/></label>
+    <label class="hobbies-set">
+        Reading
+        <input type="checkbox" name="hobby" value="reading" checked/></label>
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <legend>Different data</legend>
+    <label>
+        Weight with 0.1 step value
+        <input type="number" name="weight" value="0" min="0" max="120" step="0.1"/>
+    </label>
+    <label>
+        Height with 0.4 step value
+        <input type="number" name="weight" value="0" min="0" max="200" step="0.4"/>
+    </label>
+</fieldset>
+
+    <fieldset>
+        <label>
+            Interest rate
+            <input type="range" name="interest_rate" value="40" min="0" max="100" step="20"/>
+        </label>
+    </fieldset>
+
+
+    <fieldset>
+    <label>
+        Date
+        <input type="date" min="1921-01-01" max="2050-12-31"/>
+    </label>
+    <label>
+        Time
+        <input type="time"/>
+    </label>
+    <label>
+        Date and time
+        <input type="datetime-local" min="1921-01-01T00:00" max="2050-12-31T00:00"/>
+    </label>
+
+    <button type="submit">Submit</button>
+    </fieldset>
+</form>
+
+<form>
+    <fieldset>
+        <legend>Textarea</legend>
+    <label>
+        Email
+        <input type="email" name="e-mail" placeholder="example@gmail.com"/>
+    </label>
+    <label>
+        Feedback
+        <textarea name="feedback" rows="5" placeholder="Type your message here..."></textarea>
+    </label>
+    <button type="submit">Submit</button>
+    </fieldset>
+
+<fieldset>
+        <legend>Option select</legend>
+            <label for="size">Size</label>
+            <select id="size" name="size">
+                <option value="xs">Extra Small</option>
+                <option value="s" selected>Small</option>
+                <option value="m">Middle</option>
+                <option value="l">Large</option>
+            </select>
+
+
+    <label for="month">Month</label>
+            <select id="month" name="month">
+            <optgroup label="Summer">
+                <option value="m6">June</option>
+                <option value="m7">July</option>
+                <option value="m8">August</option>
+            </optgroup>
+
+            <optgroup label="Autumn">
+                <option value="m9">September</option>
+                <option value="m10">October</option>
+                <option value="m11">November</option>
+            </optgroup>
+        </select>
+
+   <label for="fav">Choose your favourite browser</label>
+    <input list="browsers" name="fav" id="fav"/>
+
+    <datalist id="browsers">
+        <option>Chrome</option>
+        <option>Firefox</option>
+        <option>Edge</option>
+        <option>Sefari</option>
+        <option>Opera</option>
+    </datalist>
+
+    <label for="state">Choose your state</label>
+    <input type="text" name="state" id="state" list="states"/>
+    <datalist id="states">
+        <option value="AZ">Arizona</option>
+        <option value="CA">California</option>
+        <option value="AL">Alabama</option>
+        <option value="AK">Alaska</option>
+</datalist>
+
+</fieldset>
+</form>-->
+
+<form class="form">
+    <div class="form-group" role="group" aria-labelledby="contact-details-head">
+    <p id="contact-details-head">Enter your contact details</p>
+    <label>
+        Name
+    <input type="text" name="username"/>
+    </label>
+    <label>
+        Email
+        <input type="email" name="email"/>
+    </label>
+    </div>
+
+    <div class="form-group" role="group" aria-labelledby="language-head">
+        <p id="language-head">Your favourite programming language</p>
+        <label>
+            <input type="checkbox" name="language" value="phyton"/>
+            Phyton
+        </label>
+        <label>
+            <input type="checkbox" name="language" value="js"/>
+            JavaScript
+        </label>
+        <label>
+            <input type="checkbox" name="language" value="ruby"/>
+            Ruby
+        </label>
+    </div>
+
+    <div class="form-group" role="group" aria-labelledby="newsletter-head">
+        <p id="newsletter-head">I want to receive</p>
+        <label>
+            <input type="checkbox" name="newsletter" value="weekly"/>
+            The weekly newsletter
+        </label>
+        <label>
+            <input type="checkbox" name="newsletter" value="company_offers"/>
+            Offers from the company
+        </label>
+        <label>
+            <input type="checkbox" name="newsletter" value="associated_offers"/>
+            Offers from associated companies
+        </label>
+    </div>
+
+    <button type="submit">Subscribe</button>
+
 
 </body>
 </html>

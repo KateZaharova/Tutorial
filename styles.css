@@ -1,4 +1,4 @@
-*{
+/* *{
     box-sizing: border-box;
 }
 
@@ -65,7 +65,7 @@ body{
     border-radius: 4px;
     background-color: blanchedalmond;
     color:teal;
-}*/
+}
 
 .btn{
     position: relative;
@@ -120,4 +120,62 @@ transform: translateY(-40px);
 .btn:hover::after,
 .btn:focus::after{
     transform: translateY(0);
+} 
+
+
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+}
+
+input{
+    padding:8px;
+    font-family:inherit;
+    
+}
+
+label{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 4px;
+}
+
+form{
+    width: 500px;
+    outline:4px solid teal;
+    margin-bottom: 8px;
+}
+
+textarea{
+    resize:none;
+}
+
+.color-set, .hobbies-set{
+    display:inline-block;
+}
+
+/*label{
+    display: block;
+}*/
+
+body{
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+.form-group{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 3px solid teal;
+    border-radius: 4px;
+}
+
+.form-group p{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight:700;
+    font-size:20px;
 }
